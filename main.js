@@ -4,7 +4,7 @@ let bEncrypt = document.querySelector("#cryptBtn");
 let bDecrypt = document.querySelector("#decryptBtn");
 
 let output = document.getElementById("output-text");
-let defaulMessage = "Ningún mensaje fue encontrado"
+let defaultMessage = "Ningún mensaje fue encontrado"
 let bCopy = document.querySelector("#copyBtn");
 
 let encryptKeys = {
@@ -33,24 +33,21 @@ function crypt(str, keys) {
 
 function decrypt() {
 	output.innerHTML = crypt(input.value, decryptKeys);
-	console.log(output.textContent);
 }
 
 function encrypt() {
 	output.innerHTML = crypt(input.value, encryptKeys);
-	console.log(output.textContent);
 }
 
 
 function clear() {
-	output.innerHTML = defaulMessage;
+	output.innerHTML = defaultMessage;
 	input.value = "";
 }
 
 function copy() {
 	if (output.textContent !== defaulMessage) {
 		navigator.clipboard.writeText(output.textContent);
-		console.log("Texto copiado!");
 	}
 }
 
