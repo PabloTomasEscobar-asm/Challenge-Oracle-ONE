@@ -26,7 +26,7 @@ let decryptKeys = {
 function crypt(str, keys) {
 	let re = new RegExp(Object.keys(keys).join("|"),"gi");
 	
-	return str.toLowerCase.replace(re, function(matched){
+	return str.toLowerCase().replace(re, function(matched){
 		return keys[matched.toLowerCase()];
 	})
 }
