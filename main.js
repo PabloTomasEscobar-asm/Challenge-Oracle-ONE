@@ -46,7 +46,7 @@ function clear() {
 }
 
 function copy() {
-	if (output.textContent !== defaulMessage) {
+	if (output.textContent !== defaultMessage) {
 		navigator.clipboard.writeText(output.textContent);
 	}
 }
