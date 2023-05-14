@@ -41,14 +41,12 @@ function encrypt() {
 
 
 function clear() {
-	output.innerHTML = defaultMessage;
+	output.innerHTML = "";
 	input.value = "";
 }
 
 function copy() {
-	if (output.textContent !== defaultMessage) {
 		navigator.clipboard.writeText(output.textContent);
-	}
 }
 
 bEncrypt.onclick = encrypt;
