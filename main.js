@@ -1,11 +1,10 @@
-let input = document.getElementById("input-text");
-let bClear = document.querySelector("#clsBtn");
-let bEncrypt = document.querySelector("#cryptBtn");
-let bDecrypt = document.querySelector("#decryptBtn");
+const input = document.querySelector(".input-text");
+const bClear = document.querySelector(".clsBtn");
+const bEncrypt = document.querySelector(".cryptBtn");
+const bDecrypt = document.querySelector(".decryptBtn");
 
-let output = document.getElementById("output-text");
-let defaultMessage = "Ningún mensaje fue encontrado"
-let bCopy = document.querySelector("#copyBtn");
+const output = document.querySelector(".output-text");
+const bCopy = document.querySelector(".copyBtn");
 
 let encryptKeys = {
 	e: "enter",
