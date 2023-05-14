@@ -6,7 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Encriptador</title>
 		<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8"/>
-
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
 	</head>
 	<body>
 		<header>
@@ -14,18 +16,21 @@
 		</header>
 
 		<main>
-			<section>
+			<section class="input-section">
 				<button id="clsBtn">Borrar</button>
 				<textarea placeholder="Ingrese el texto aqui" name="mensaje" id="input-text"></textarea>
-				<div>
+				<div class="info-area">
 					<img class="info" src="assets/exclamacion.svg" alt="Signo de exclamación"/>
 					<h6 class="info">Solo letras minúsculas y sin acentos</h6>
 				</div>
-				<button id="cryptBtn">Encriptar</button>
-				<button id="decryptBtn">Desencriptar</button>
+				<div class="btn">
+					<button id="cryptBtn">Encriptar</button>
+					<button id="decryptBtn">Desencriptar</button>
+				</div>
+
 			</section>
 
-			<section>
+			<section class="output-section">
 				<textarea name="output" id="output-text" placeholder="Ningún mensaje fue encontrado"></textarea>
 				<button id="copyBtn">Copiar</button>
 			</section>
