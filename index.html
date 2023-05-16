@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE-edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Encriptador</title>
+		<link rel="stylesheet" href="reset.css" type="text/css" charset="utf-8">
 		<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,30 +17,37 @@
 		</header>
 
 		<main>
-			<section class="input-section">
-				<button class="clsBtn">Borrar</button>
-				<textarea placeholder="Ingrese el texto aqui" name="mensaje" class="input-text"></textarea>
-				<div class="info-area">
-					<img class="info" src="assets/exclamacion.svg" alt="Signo de exclamación"/>
-					<h6 class="info">Solo letras minúsculas y sin acentos</h6>
-				</div>
-				<div class="btn">
-					<button class="cryptBtn">Encriptar</button>
-					<button class="decryptBtn">Desencriptar</button>
-				</div>
+			<section class="flex-container">
+				
+				<section class="input-section">
+					<textarea placeholder="Ingrese el texto aqui" name="mensaje" class="input-text"></textarea>
+					<div class="info-area">
+						<img class="info" src="assets/exclamacion.svg" alt="Signo de exclamación"/>
+						<h6 class="info">Solo letras minúsculas y sin acentos</h6>
+					</div>
+					<div class="btn">
+						<button class="cryptBtn">Encriptar</button>
+						<button class="decryptBtn">Desencriptar</button>
+					</div>
 
-			</section>
+				</section>
 
-			<section class="output-section">
-				<textarea name="output" class="output-text" placeholder="Ningún mensaje fue encontrado"></textarea>
-				<div class="copyBtnArea">
-					<button class="copyBtn">Copiar</button>
-				</div>
-			</section>
-		</main>
+				<section class="output-section">
+					<div class="output-textarea">
+						<textarea name="output" class="output-text" readonly placeholder="Ningún mensaje fue encontrado"></textarea>
+					</div>
+					<div class="copyBtnArea">
+						<button class="copyBtn">Copiar</button>
+					</div>
+				</section>
+			</main>
 		
-		<footer>
-		</footer>
+			<footer>
+				<div class="footer-bar">
+					
+				</div>
+			</footer>
+			</section>
 		<script src="main.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

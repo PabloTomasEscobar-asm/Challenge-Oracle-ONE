@@ -1,5 +1,5 @@
 * {
-	background: #F3F5FC;
+	background-color: #F3F5FC;
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	font-size: 32px;
@@ -7,43 +7,66 @@
 }
 
 .logo {
-	margin: 40px 0 0 40px;
+	margin: 4% 0 0 4.5%;
 }
 
 main {
-	display: flex;
-	margin: 0 0 50px 50px;
+	border: 3px solid black;
+	width: 90%;
+	height: 48rem;
+	margin: 3% auto 0 5%;
+}
 
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.input-section {
+	border: 3px dashed gray;
+	align-items: stretch;
+	flex-grow: 2;
+	margin: 0 0 0 5%;
 }
 
 .input-text {
-	height: 400px;
-	width: 65%;
 	border: none;
 	color: #0A3871;
-	margin: 90px 0 0 0;
-	padding: 2px;
+	width: 75%;
+	height: 35rem;
 	text-transform: lowercase;
+	resize: none;
+
 }
-::placeholder { 
-	color: #0A3871 
+::paceholder {
+	color: #0A3871;
 }
 
 .input-text:focus {
 	outline: none;
 }
 
-.info {
-	display: inline;
-	align-items: center;
+.info-area {
+	 display: flex;
+   align-items: center;
 }
-.info:first-child {
-	width: 4%;
+
+.info {
+	padding: 0 0.2rem;
+	display: inline;
+}
+
+.info:last-child {
+	font-size: 18px;
+	color: #495057;
 }
 
 .btn {
+	margin: 16px 0 0 0;
 	display: flex;
-	margin: 10px 0 0 0;
+	height: 67px;
+	border: 3px dotted red;
 }
 
 .cryptBtn {
@@ -58,29 +81,51 @@ main {
 }
 
 .decryptBtn {
-	background: #D8DFE8;
+	background-color: #D8DFE8;
 	border: 1px solid #0A3871;
 	border-radius: 24px;
 	color: #0A3871;
 	cursor: pointer;
 	height: 67px;
 	width: 320px;
-	font-size: 16px;
 	margin: 0 0 0 24px;
+	font-size: 16px;
+}
+
+.output-section {
+	/*! border: 10px dashed brown; */
+	margin: calc(-3% - 48px) 0 0 0;
+	flex: 20px;
+	height: 48rem;
+	background: #FFFFFF;
+  border-radius: 32px;
+	padding: 3%;
 }
 
 .output-text {
-	height: 400px;
-	width: 35%;
-	background: #FFFFFF;
 	border: none;
-	border-radius: 24px;
+	outline: none;
+	background: #FFFFFF;
 	color: #0A3871;
-	margin: 20px 0 0 20px;
+	resize: none;
+	height: 40rem;
+  width: 100%;
+	margin: 0 auto;
+
 }
 
 .output-text:focus {
 	outline: none;
+}
+
+.copyBtnArea {
+	margin: 2.5rem 0 0 0;
+	border: 3px solid red;
+	display: flex;
+	justify-content: center;
+	height: 67px;
+	background: #FFFFFF;
+	
 }
 
 .copyBtn {
@@ -92,10 +137,15 @@ main {
 	height: 67px;
 	width: 320px;
 	font-size: 16px;
-	margin: 0 0 0 24px;
 }
 
-.copyBtnArea {
-	display: flex;
+footer{
+	background: brown;
 }
 
+.footer-bar {
+	margin: 5rem auto 0;
+	height: 40%;
+	border: 3px solid gray;
+	background: brown;
+}
