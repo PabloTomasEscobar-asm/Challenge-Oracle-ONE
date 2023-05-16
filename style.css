@@ -94,23 +94,75 @@ main {
 	flex: 20px;
 	height: 48rem;
 	background: #FFFFFF;
-  border-radius: 32px;
+	border-radius: 32px;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 	padding: 3%;
 }
 
 .output-textarea {
-	background-color: #FFFFFF; 
+	display: flex;
+	background: #FFFFFF;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.no-output {
+	/* display: none; */
+	display: block-flex; 
+	margin: 8.2rem auto 110px;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	float: left;
+}
+
+.muneco {
+	background: transparent;
+	display: block;
+	width: 336px;
+	height: 304px;
+}
+
+.no-output-text{
+	background: transparent;
+	display: block;
+}
+
+.no-output-text > h6 {
+	margin: 16px auto;
+	text-align: center;
+	background: transparent;
+	font-size: 24px;
+	color: #343A40;
+	font-weight: 700;
+	line-height: 120%;
+	
+}
+
+.no-output-text > p {
+	background: transparent;
+	text-align: center;
+	font-size: 18px;
+	color: #495057;
+	font-weight: 400;
+	line-height: 24px;
 }
 
 .output-text {
+	display: none;
+	/* display:flex; */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	border: none;
 	outline: none;
-	background: #FFFFFF;
+	background: transparent;
 	color: #0A3871;
 	resize: none;
 	height: 40rem;
-    width: 100%;
-	margin: 0 auto;
+  width: 100%;
+	margin: 0 auto 2rem;
 
 }
 
@@ -119,7 +171,6 @@ main {
 }
 
 .copyBtnArea {
-	margin: 2.5rem 0 0 0;
 	display: flex;
 	justify-content: center;
 	height: 67px;
