@@ -1,5 +1,4 @@
 const input = document.querySelector(".input-text");
-const bClear = document.querySelector(".clsBtn");
 const bEncrypt = document.querySelector(".cryptBtn");
 const bDecrypt = document.querySelector(".decryptBtn");
 
@@ -31,24 +30,17 @@ function crypt(str, keys) {
 }
 
 function decrypt() {
-	output.innerHTML = crypt(input.value, decryptKeys);
+	output.value = crypt(input.value, decryptKeys);
 }
 
 function encrypt() {
-	output.innerHTML = crypt(input.value, encryptKeys);
-}
-
-
-function clear() {
-	output.innerHTML = "";
-	input.value = "";
+	output.value = crypt(input.value, encryptKeys);
 }
 
 function copy() {
-		navigator.clipboard.writeText(output.textContent);
+		navigator.clipboard.writeText(output.value);
 }
 
 bEncrypt.onclick = encrypt;
 bDecrypt.onclick = decrypt;
-bClear.onclick = clear;
 bCopy.onclick = copy;
