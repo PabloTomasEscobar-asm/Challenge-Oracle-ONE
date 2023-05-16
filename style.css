@@ -98,6 +98,10 @@ main {
 	padding: 3%;
 }
 
+.output-textarea {
+	background-color: #FFFFFF; 
+}
+
 .output-text {
 	border: none;
 	outline: none;
