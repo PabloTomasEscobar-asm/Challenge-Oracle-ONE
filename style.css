@@ -13,7 +13,7 @@
 main {
 	width: 90%;
 	height: 48rem;
-	margin: 3% auto 0 5%;
+	margin: 2% auto 0 5%;
 }
 
 .flex-container {
@@ -32,7 +32,7 @@ main {
 	border: none;
 	color: #0A3871;
 	width: 75%;
-	height: 35rem;
+	height: 32rem;
 	text-transform: lowercase;
 	resize: none;
 
@@ -92,7 +92,7 @@ main {
 .output-section {
 	margin: calc(-3% - 48px) 0 0 0;
 	flex: 20px;
-	height: 48rem;
+	height: 44rem;
 	background: #FFFFFF;
 	border-radius: 32px;
 	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -110,7 +110,7 @@ main {
 .no-output {
 	/* display: none; */
 	display: block-flex; 
-	margin: 8.2rem auto 110px;
+	margin: 5.2rem auto 110px;
 	justify-content: center;
 	align-items: center;
 	background: transparent;
