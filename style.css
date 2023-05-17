@@ -12,7 +12,7 @@
 
 main {
 	width: 90%;
-	height: 48rem;
+	height: 45rem;
 	margin: 2% auto 0 5%;
 }
 
@@ -75,6 +75,12 @@ main {
 	height: 67px;
 	width: 320px;
 	font-size: 16px;
+	transition-duration: 0.3s;
+	
+}
+.cryptBtn:active {
+	background: #052051;
+	transform: scale(1.02);
 }
 
 .decryptBtn {
@@ -87,10 +93,17 @@ main {
 	width: 320px;
 	margin: 0 0 0 24px;
 	font-size: 16px;
+	transition-duration: 0.3s;
 }
 
+.decryptBtn:active {
+	background: #757FB2;
+	transform: scale(1.02);
+}
+ 
+
 .output-section {
-	margin: calc(-3% - 48px) 0 0 0;
+	margin: calc(-2.7% - 48px) 0 0 0;
 	flex: 20px;
 	height: 44rem;
 	background: #FFFFFF;
@@ -108,8 +121,8 @@ main {
 }
 
 .no-output {
-	/* display: none; */
-	display: block-flex; 
+	 display: none;
+	/*display: block-flex;*/ 
 	margin: 5.2rem auto 110px;
 	justify-content: center;
 	align-items: center;
@@ -150,8 +163,8 @@ main {
 }
 
 .output-text {
-	display: none;
-	/* display:flex; */
+	/*display: none;*/
+	 display:flex; 
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -160,7 +173,7 @@ main {
 	background: transparent;
 	color: #0A3871;
 	resize: none;
-	height: 40rem;
+	height: 37.4rem;
   width: 100%;
 	margin: 0 auto 2rem;
 
@@ -171,6 +184,7 @@ main {
 }
 
 .copyBtnArea {
+	/*display: none;*/
 	display: flex;
 	justify-content: center;
 	height: 67px;
@@ -187,6 +201,12 @@ main {
 	height: 67px;
 	width: 320px;
 	font-size: 16px;
+  transition-duration: 0.3s;
+}
+
+.copyBtn:active {
+	background: #ADB5BD;
+	transform: scale(1.02);
 }
 
 footer{
