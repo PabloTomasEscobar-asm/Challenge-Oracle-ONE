@@ -1,8 +1,12 @@
+//Input area
 const input = document.querySelector(".input-text");
 const bEncrypt = document.querySelector(".cryptBtn");
 const bDecrypt = document.querySelector(".decryptBtn");
 
+//Output area
+const muneco = document.querySelector(".no-output");
 const output = document.querySelector(".output-text");
+const copyArea = document.querySelector(".copyBtnArea");
 const bCopy = document.querySelector(".copyBtn");
 
 let encryptKeys = {
@@ -31,15 +35,32 @@ function crypt(str, keys) {
 
 function decrypt() {
 	output.value = crypt(input.value, decryptKeys);
+	toggleOutputArea();
 }
 
 function encrypt() {
 	output.value = crypt(input.value, encryptKeys);
+	toggleOutputArea();
 }
 
 function copy() {
-		navigator.clipboard.writeText(output.value);
+	navigator.clipboard.writeText(output.value);
 }
+
+function toggleOutputArea() {
+	if (output.value != "") {
+		muneco.style.display = "none";
+		output.style.display = "flex";
+		copyArea.style.display = "flex";
+	}
+	else {
+		output.style.display = "none";
+		copyArea.style.display = "none";
+		muneco.style.display = "block";
+	}
+}
+
+
 
 bEncrypt.onclick = encrypt;
 bDecrypt.onclick = decrypt;
