@@ -121,8 +121,7 @@ main {
 }
 
 .no-output {
-	 display: none;
-	/*display: block-flex;*/ 
+	display: block-flex; 
 	margin: 5.2rem auto 110px;
 	justify-content: center;
 	align-items: center;
@@ -163,8 +162,7 @@ main {
 }
 
 .output-text {
-	/*display: none;*/
-	 display:flex; 
+	display: none;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -184,8 +182,7 @@ main {
 }
 
 .copyBtnArea {
-	/*display: none;*/
-	display: flex;
+	display: none;
 	justify-content: center;
 	height: 67px;
 	background: #FFFFFF;
