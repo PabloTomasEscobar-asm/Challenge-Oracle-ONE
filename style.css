@@ -4,35 +4,40 @@
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 150%;
+	/* background:rgba(24, 2, 2, 0.021) !important; */
 }
 
 .logo {
-	margin: 4% 0 0 4.5%;
+	margin: 3% 0 0 4.5%;
+}
+
+body {
+	height: 90vh;
 }
 
 main {
-	width: 90%;
-	height: 45rem;
-	margin: 2% auto 0 5%;
+	width: 97vw;
+	height: 90%;
+	margin: 2% auto;
 }
 
 .flex-container {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row;
 	justify-content: center;
 }
 
 .input-section {
 	align-items: stretch;
 	flex-grow: 2;
-	margin: 0 0 0 5%;
+	margin: 0 0 0 9vw;
 }
 
 .input-text {
 	border: none;
 	color: #0A3871;
-	width: 75%;
-	height: 32rem;
+	width: 95%;
+	height: 63vh;
 	text-transform: lowercase;
 	resize: none;
 
@@ -105,28 +110,32 @@ main {
 .output-section {
 	margin: calc(-2.7% - 48px) 0 0 0;
 	flex: 20px;
-	height: 44rem;
+	height: 80vh;
 	background: #FFFFFF;
 	border-radius: 32px;
 	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-	padding: 3%;
+	padding: 3% 1%;
 }
 
 .output-textarea {
 	display: flex;
+	flex: 1;
 	background: #FFFFFF;
 	justify-content: center;
 	align-items: center;
-	
+	margin: auto;
+	width: 336px;
+	height: 75vh;
 }
 
 .no-output {
-	display: block-flex; 
-	margin: 5.2rem auto 110px;
+	display: flex;
+	flex-direction: column;	
+	margin: 35% auto;
+	width: 336px;
 	justify-content: center;
 	align-items: center;
 	background: transparent;
-	float: left;
 }
 
 .muneco {
@@ -172,7 +181,7 @@ main {
 	color: #0A3871;
 	resize: none;
 	height: 37.4rem;
-  width: 100%;
+  	width: 100%;
 	margin: 0 auto 2rem;
 
 }
@@ -185,8 +194,7 @@ main {
 	display: none;
 	justify-content: center;
 	height: 67px;
-	background: #FFFFFF;
-	
+	background: transparent;
 }
 
 .copyBtn {
@@ -198,7 +206,8 @@ main {
 	height: 67px;
 	width: 320px;
 	font-size: 16px;
-  transition-duration: 0.3s;
+	margin-bottom: 32px;
+  	transition-duration: 0.3s;
 }
 
 .copyBtn:active {
@@ -206,8 +215,106 @@ main {
 	transform: scale(1.02);
 }
 
-footer{
+@media screen and (max-width: 1181px) {	
+	.flex-container {
+		flex-flow: wrap;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.input-section {
+		margin: 1%;
+	}
+
+	.input-text {
+		height: 55vh;
+		width: 99%;
+		margin: auto;
+	}
+
+	.btn {
+		margin: 16px auto;
+		justify-content: center;
+	}
+
+	.output-section {
+		margin: 2vh 1%;
+		height: 40vh;
+	}
+
+	.output-textarea {
+		height: 15vh;
+		width: 99%;
+		margin: auto;
+		
+	}
+
+	.output-text {
+		height: 15vh;
+		width: 99%;
+		margin: auto;
+	}
+
+	.muneco {
+		display: none;
+	}
+
+
 }
 
-.footer-bar {
+@media screen and (max-width: 700px) {	
+	main {
+		height: 90vh;
+	}
+	
+	.flex-container {
+		flex-flow: wrap;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.input-section {
+		margin: 1%;
+	}
+
+	.input-text {
+		height: 40vh;
+		width: 99%;
+		margin: auto;
+	}
+
+	.btn {
+		display: flex;
+		flex-flow: wrap;
+		margin: 16px auto;
+		justify-content: center;
+	}
+
+	.decryptBtn {
+		margin: 24px 0 0 0;
+	}
+
+	.output-section {
+		margin: 10vh 1% 0;
+		height: 40vh;
+	}
+
+	.no-output {
+		width: 300px;
+	}
+
+	.output-textarea {
+		height: 15vh;
+		width: 99%;
+		margin: auto;
+		
+	}
+
+	.output-text {
+		height: 15vh;
+		width: 99%;
+		margin: auto;
+	}
+
+	.muneco {
+		display: none;
+	}
 }
